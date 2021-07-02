@@ -1,0 +1,38 @@
+<!--qna-->
+<section class="sect sect-qna contents">
+    <div class="contents">
+        <div class="sect-container">
+            <div class="title-area">
+                <p class="title-sub">[ 자주묻는 질문 ]</p>
+                <p class="title-main">대만족 장기렌탈, 멜론카</p>
+            </div>
+            <div class="qna-area">
+                <ul class="qna-ul">
+                    @@loop('../_qna/_qna_temp.html',"./shoping/_qna/_qna_info.json")
+                </ul>
+            </div>
+            <div class="ment-area">
+                <p class="p-ment01">신차구입, 아직 고민 중이세요?</p>
+                <p class="p-ment02">최상의 가격, 놀라운 조건이 기다립니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $(".sect-qna .qna-ul .qna-title").on("click",function(){
+            let state = $(this).siblings(".txt-area").css("display");
+            console.log(state);
+            if(state == "none"){
+                $(".sect-qna .qna-ul .txt-area").hide();
+                $(this).siblings(".txt-area").show();    
+            }
+            else{
+                $(".sect-qna .qna-ul .txt-area").hide();
+            }
+            
+        });
+    });
+
+</script>

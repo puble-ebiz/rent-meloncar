@@ -1,0 +1,103 @@
+@@include('../include/_head_top.html')
+
+<!--전용js-->
+<!-- <script src="http://design.ebiznetworks.co.kr/lhc/meloncar/static/js/main/init.js"></script> -->
+<!--./전용js-->
+
+</head>
+
+<body>
+    <div class="wrap">
+        @@include('../include/_header.html')
+        <main class="wrap-container wrap-main">
+            <!--인트로 부분(메인)-->
+            <section class="sect sect-intro">
+                <div class="contents">
+                    <div class="intro-main">
+                        <div class="intro-visual">
+                            <div class="visual-cont">
+                                <div class="img-box show-pc"><img
+                                        src="http://static.meloncar.kr/img/main/intro_main.jpg" alt="인트로"></div>
+                                <div class="img-box show-mobile"><img
+                                        src="http://static.meloncar.kr/img/main/intro_main_m.jpg" alt="인트로"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-info">
+                        <div class="sect-container">
+                            <ul class="intro-info-ul">
+                                <li>
+                                    <p class="num fn-counter">121</p>
+                                    <p class="txt">금일상담건</p>
+                                </li>
+                                <li>
+                                    <p class="num fn-counter">110,823</p>
+                                    <p class="txt">누적상담건</p>
+                                </li>
+                                <li>
+                                    <p class="num fn-counter">12,010</p>
+                                    <p class="txt">전체계약건</p>
+                                </li>
+                                <li>
+                                    <p class="num fn-counter">102</p>
+                                    <p class="txt">영업사원수</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--인트로 부분(메인)-->
+            @@include('../shoping/_contents/_sect_benefit.html')
+            @@include('../shoping/_contents/_sect_advantage.html')
+            @@include('../shoping/_contents/_sect_carlist.html')
+            @@include('../shoping/_contents/_sect_partner.html')
+            @@include('../shoping/_contents/_sect_qna.html')
+            <!-- 하단 상담신청바 -->
+            <div class="consult-bar">
+                <div class="inner">
+                    <h4>
+                        <img src="http://static.meloncar.kr/img/main/bottom_img01.png" alt="장기렌터카 간편 상담신청">
+                    </h4>
+                    <form action="" class="user-info">
+                        <ul>
+                            <li>
+                                <label for="user-name">성함</label>
+                                <input id="user-name" type="text" placeholder="고객명" />
+                            </li>
+                            <li>
+                                <label for="user-wish">희망모델</label>
+                                <input id="user-wish" type="text" placeholder="차종입력" />
+                            </li>
+                            <li>
+                                <label for="user-phone">연락처</label>
+                                <input id="user-phone" type="text" placeholder="번호만 입력('-'제외)" />
+                            </li>
+                        </ul>
+                        <!-- 2021.06.25 개인정보수집 추가 -->
+                        <div class="agreement">
+                            <input type="checkbox" id="check-agreement" checked>
+                            <label for="check-agreement">
+                                <span>개인정보 수집동의</span>
+                            </label>
+                            <button type="button" class="btn-more">보기</button>
+                        </div>
+                        <!-- 2021.06.25 개인정보수집 추가 -->
+                        <button class="btn-estimate">
+                            <img src="http://static.carminute.co.kr/img/landing/car_minute/landing/btn-receive.png"
+                                alt="지금 견적받기">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- //하단 상담신청바 -->
+        </main>
+        @@include('../shoping/_side_cont.html')
+
+
+
+        @@include('../include/_footer.html')
+    </div>
+</body>
+
+</html>

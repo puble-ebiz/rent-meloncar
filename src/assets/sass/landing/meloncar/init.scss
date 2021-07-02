@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+.land-wrap {
+    width: 100%;
+
+    .land-container {
+        width: 100%;
+        section {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: calc((10 / 750) * 100vw);
+    }
+}
+
+.show-mobile {
+    display: none !important;
+}
+.show-pc {
+    display: block !important;
+}
+
+@media (max-width: 900px) {
+    .show-mobile {
+        display: block !important;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .show-pc {
+        display: none !important;
+    }
+}
+
+@import './_main';

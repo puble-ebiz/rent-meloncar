@@ -1,0 +1,187 @@
+.wrap-main .sect-quote{
+    background: url("http://static.carminute.co.kr/img/main/quote_bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 140px;
+
+    .quote-area{
+        margin: 0 auto;
+        max-width: 574px;
+        width: 100%;
+        margin-top: 80px;
+        .in-box{
+            width: 100%;
+            input{
+                background-color: #3f3f3f;
+                width: 100%;
+                height: 70px;
+                display: block;
+                padding-left: 20px;
+                border: 1px solid #717171;
+                margin-bottom: 16px;
+                color: #ccc;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 1.0;
+                padding-top: 8px;
+                &::placeholder{
+                    color: #aaa;
+                }
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .agree-box{
+            display: flex;
+            margin-top: 18px;
+            align-items: center;
+
+            .check-agree{
+                display: none;
+            }
+            .label-agree{
+                color: #fff;
+                font-size: 22px;
+                letter-spacing: -0.8px;
+                display: flex;
+                align-items: center;
+                span{
+                    padding-top: 5px;
+                }
+                &::before{
+                    content: "";
+                    margin-right: 14px;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid #ccc;
+                    background-color: #fff;
+                }
+            
+            }
+
+            .check-agree:checked+.label-agree::before{
+                // content: "✓";
+                content: "✔";
+                color: #fff;
+                font-size: 24px;
+                line-height: 1.5;
+                display: flex;
+                justify-content: center;
+                background-color: #2a6caa;
+                border-color: #3c7b99;
+            }
+            .btn-policy{
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                width: 64px;
+                height: 30px;
+                padding-top: 4px;
+                color: #fff;
+                font-size: 22px;
+                letter-spacing: -0.7px;
+                background-color: #7c7c7e;
+            }
+        }
+        .btn-quote{
+            margin-top: 45px;
+            width: 100%;
+            height: 90px;
+            border-radius: 45px;
+            // background-color: #6841cc;
+            background: linear-gradient(#967cdc, #6841cc);
+            color: #fff;
+            font-size: 35px;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+    }
+
+
+}
+
+
+@media(max-width:900px){
+.wrap-main .sect-quote{
+    padding-top: 10.0rem;
+    padding-bottom: 8.0rem;
+    .quote-area{
+        margin: 0 auto;
+        margin-top: 7.0rem;
+        max-width: none;
+        width: 76%;
+        .in-box{
+            width: 100%;
+            input{
+                height: 7.0rem;
+                display: block;
+                padding-left: 2.0rem;
+                margin-bottom: 1.8rem;
+                
+                font-size: 3.6rem;
+                padding-top: 0.8rem;
+                &::placeholder{
+                    
+                }
+                &:last-of-type{
+                    
+                }
+            }
+        }
+        .agree-box{
+            display: flex;
+            margin-top: 2.0rem;
+            align-items: center;
+            .check-agree{
+                
+            }
+            .label-agree{
+                color: #fff;
+                font-size: 2.4rem;
+                display: flex;
+                align-items: center;
+                span{
+                    padding-top: 1.0rem;
+                }
+                &::before{
+                    content: "";
+                    margin-right: 1.4rem;
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    border: 2px solid #ccc;
+                    background-color: #fff;
+                }
+            
+            }
+
+            .check-agree:checked+.label-agree::before{
+                font-size: 2.5rem;
+                line-height: 1.5;
+            }
+            .btn-policy{
+                margin-left: 1.2rem;
+                border-radius: 1.6rem;
+                width: 6.6rem;
+                height: 3.2rem;
+                padding-top: 0.4rem;
+                color: #fff;
+                font-size: 2.2rem;
+                letter-spacing: -0.7px;
+                background-color: #7c7c7e;
+            }
+        }
+        .btn-quote{
+            margin-top: 4.5rem;
+            height: 9.0rem;
+            border-radius: 4.5rem;
+            color: #fff;
+            font-size: 3.5rem;
+            padding-top: 1.0rem;
+        }
+    }
+}
+}

@@ -1,0 +1,271 @@
+.contents-area {
+    // position: absolute;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+    margin-top: -49%;
+
+    .ask-area {
+        padding-top: 50px;
+        padding-bottom: 82px;
+        position: relative;
+        max-width: 1196px;
+        width: 100%;
+        // min-height: 725px;
+        margin: 0 auto;
+        background: url('http://static.carminute.co.kr/img/landing/tesla/tsla_lighting.png') no-repeat top,
+            linear-gradient(150deg, #0f4197, #2399c9, #0f4197, #2399c9);
+        opacity: 0.9;
+
+        .m-consult-wrap-tsla {
+            display: none;
+        }
+
+        .top-ment {
+            width: 600px;
+            margin: 0 auto;
+
+        }
+
+        .btn-consult2 {
+            position: absolute;
+            right: 14%;
+            margin-top: -36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 112px;
+            height: 112px;
+            color: #fff;
+
+            .img-box {
+                width: 32px;
+                padding-left: 9px;
+
+            }
+
+            .p-txt {
+                margin-top: 7px;
+                font-family: 'GmarketSans', sans-serif;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+
+    .contents-area {
+
+
+        .ask-area {
+            background-size: 100%;
+            padding-bottom: 0;
+
+            .pc {
+                display: none;
+            }
+
+            .ment-all {
+                border-radius: 0;
+                padding: 3.5rem 0;
+            }
+
+            // 테슬라 렌딩 모바일 start
+
+
+            div.m-consult-wrap-tsla {
+                display: block;
+                color: white;
+
+                .logo-top {
+                    img {
+                        display: block;
+                        margin: auto;
+                        padding-bottom: 10px;
+                    }
+
+                    img:nth-of-type(1) {
+                        width: 60%;
+                    }
+
+                    img:nth-of-type(2) {
+                        width: 80%;
+                    }
+
+                    img:nth-of-type(3) {
+                        width: 60%;
+                    }
+
+                }
+
+                .pop-consult {
+
+                    .btn-consult {
+                        display: block;
+                        width: 78%;
+                        height: 8.6rem;
+                        margin: 0 auto;
+                        background: linear-gradient(#6e46ca, #a179e3, #451a76 90%);
+                        border: 3px solid #919fbe;
+                        border-radius: 2.0rem;
+                        color: white;
+                        font-size: 4.4rem;
+                        font-weight: 500;
+                        letter-spacing: -0.7px;
+                        padding-top: 0.6rem;
+                    }
+
+                    .in-box {
+                        width: 86%;
+                        margin: 20px auto;
+
+                        >div {
+                            overflow: hidden;
+
+                            input {
+                                float: left;
+                                width: 48.6%;
+                            }
+
+                            input:last-child {
+                                float: right;
+                            }
+                        }
+
+                        input {
+                            line-height: 3.3rem;
+                            font-size: 3.0rem;
+                            font-weight: 300;
+
+                            padding: 0.6rem;
+                            height: 6.2rem;;
+                            padding-left: 2.0rem;
+                            padding-top: 1.4rem;
+                        }
+
+                        >input {
+                            margin-top: 1.8rem;
+                            width: 100%;
+                            ;
+                        }
+
+
+                    }
+
+                    .pop-cont {
+                        width: 100%;
+
+                        .bg {
+                            padding-top: 2.8rem;
+                            padding-bottom: 3.2rem;
+                            background: rgba(0, 0, 0, 0.3);
+                        }
+
+                        .pop-list {
+                            width: 84%;
+                            margin: 0 auto;
+                            padding-top: 5px;
+
+                            li {
+                                display: flex;
+                                padding-top: 0.8rem;
+                                font-size: 2.1rem;
+
+                                p {
+                                    line-height: 3.3rem;
+
+                                    span {
+                                        display: block;
+                                        text-align: left;
+                                        line-height: 1.4;
+
+                                    }
+
+                                }
+
+                                p.title {
+                                    width: 7.6rem;
+                                    height: 3.4rem;
+                                    border-radius: 3.0rem;
+                                    background-color: #05285d;
+                                    text-align: center;
+                                    font-size: 2.5rem;
+                                    padding-top: 0.3rem;
+                                    letter-spacing: -0.7px;
+                                }
+
+                                p.cont {
+                                    padding-left: 10px;
+                                    font-size: 2.5rem;
+                                    letter-spacing: -0.5px;
+                                }
+                            }
+
+                            li:nth-of-type(1) {
+                                p.cont {
+                                    
+                                    font-weight: 600;
+                                }
+                            }
+
+                            li:nth-of-type(3) {
+                                p.cont {
+                                    span {
+                                        display: inline-block;
+                                        text-decoration: line-through;
+                                    }
+
+                                    em {
+                                        display: inline-block;
+                                        font-size: 3.5rem;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        color: #fff000;
+                                    }
+
+                                    b {
+                                        color: #fff000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 테슬라 렌딩 모바일 end
+            .ment-all {
+                .content {
+                    h3 {
+                        font-size: 4.2rem;
+                        padding: 8.0rem 0 1.5rem;
+                    }
+
+                    p {
+                        font-size: 2.5rem;
+                        line-height: 4.0rem;
+                    }
+                }
+
+                .text {
+                    width: 90%;
+                    margin: auto;
+
+                    p {
+                        font-size: 2.5rem;
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

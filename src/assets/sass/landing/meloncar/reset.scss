@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+//기본세팅
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    // font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumSquare', sans-serif;
+    // font-family: 'GmarketSans', sans-serif;
+    outline: none;
+    line-height: 1.1;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+input{
+    outline: none;
+}
+button{
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+a:link {text-decoration: none; }
+a:visited {text-decoration: none;}
+a:active {text-decoration: none; }
+a:hover {text-decoration: none; }
+
+img{
+    width: 100%;
+    vertical-align: middle;
+}

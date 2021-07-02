@@ -1,0 +1,1215 @@
+.wrap-container {
+    position: relative;
+}
+
+/* common title */
+.wrap-container .title-area {
+    text-align: center;
+}
+.wrap-container .title-area * {
+    font-family: 'S-CoreDream', sans-serif;
+    line-height: 1.1;
+}
+.wrap-container .title-area .title-sub {
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+    word-break: keep-all;
+    letter-spacing: -1.8px;
+}
+.wrap-container .title-area .title-main {
+    color: #ff6c00;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 18px;
+    word-break: keep-all;
+    letter-spacing: -5.8px;
+}
+.wrap-container .sub-ment {
+    font-family: 'S-CoreDream', sans-serif;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 36px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+.wrap-container .ment-area {
+    text-align: center;
+    margin-top: 46px;
+}
+.wrap-container .ment-area p {
+    font-family: 'S-CoreDream', sans-serif;
+    line-height: 1.1;
+    font-size: 38px;
+    letter-spacing: -2px;
+}
+.wrap-container .ment-area .p-ment01 {
+    color: #686868;
+    font-weight: 400;
+}
+.wrap-container .ment-area .p-ment02 {
+    margin-top: 14px;
+    color: #000;
+    font-weight: 500;
+}
+/* //common title */
+
+/* 하단 상담신청바 */
+.wrap-container .consult-bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100px;
+    background-color: #0d6a00;
+}
+.consult-bar .inner {
+    margin: 0 auto;
+    width: 1110px;
+    height: 100%;
+}
+.consult-bar h4 {
+    position: relative;
+    top: -30px;
+    left: 0;
+    float: left;
+    width: 190px;
+}
+
+.consult-bar .user-info {
+    text-align: center;
+}
+.consult-bar .user-info ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* img-starbucks 190 ,img-btn 166, gap 10*3 */
+    width: calc(100% - 356px);
+    height: 70px;
+}
+.consult-bar .user-info ul li {
+    margin-left: 10px;
+}
+.consult-bar .user-info ul li:first-child {
+    margin-left: 0;
+}
+.consult-bar .user-info input {
+    padding-left: 10px;
+    height: 35px;
+}
+.consult-bar .user-info label {
+    margin-right: 8px;
+    color: #fff;
+}
+.consult-bar .btn-estimate {
+    float: left;
+    width: 166px;
+    height: 70px;
+}
+
+.consult-bar .user-info ul li input::-webkit-input-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.consult-bar .user-info ul li input::-moz-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.consult-bar .user-info ul li input:-ms-input-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.consult-bar .user-info ul li input::-ms-input-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.consult-bar .user-info ul li input::placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+/* add */
+.consult-bar .user-info .agreement {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13px;
+}
+.consult-bar .user-info .agreement input {
+    display: none;
+}
+.consult-bar .user-info .agreement label {
+    display: flex;
+    align-items: center;
+}
+.consult-bar .user-info .agreement label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.consult-bar .user-info .agreement input:checked + label:before {
+    content: '✔';
+    border-color: #3c7b99;
+    background-color: #2a6caa;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+}
+
+.consult-bar .user-info .agreement label span {
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 1;
+}
+.consult-bar .user-info .agreement .btn-more {
+    padding: 0 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #0d6a00;
+}
+/* //add */
+@media (max-width: 1750px) {
+    .consult-bar .inner {
+        width: 75%;
+    }
+}
+@media (max-width: 1425px) {
+    .consult-bar .user-info ul label {
+        display: none;
+    }
+}
+@media (max-width: 1140px) {
+    .consult-bar .inner {
+        width: 98%;
+    }
+}
+@media (max-width: 900px) {
+    .consult-bar {
+        display: none;
+    }
+}
+/* //하단 상담신청바 */
+/* SideBanner */
+.side-sect-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.side-sect-right .side-area {
+    right: 30px;
+    top: 150px;
+    position: absolute;
+}
+.side-sect-right .side-area .side-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.side-sect-right .side-area .side-item .btn-rent {
+    margin-left: 20px;
+}
+.side-sect-right .side-area .side-item:last-of-type {
+    margin-bottom: 0;
+}
+.side-sect-right .side-area .side-item img {
+    width: auto;
+}
+/* //SideBanner */
+/* 메인Intro */
+.wrap-main .sect-intro .sect-container {
+    text-align: center;
+}
+.wrap-main .sect-intro .intro-main {
+    width: 100%;
+}
+.wrap-main .sect-intro .intro-main .intro-visual {
+    overflow: hidden;
+    position: relative;
+}
+.wrap-main .sect-intro .intro-main .intro-visual .visual-cont {
+    position: relative;
+    width: 100%;
+    left: 50%;
+}
+.wrap-main .sect-intro .intro-main .intro-visual .img-box {
+    position: relative;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    min-width: 1920px;
+}
+.wrap-main .sect-intro .intro-info {
+    width: 100%;
+    height: 128px;
+    background-color: #739949;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.wrap-main .sect-intro .intro-info .intro-info-ul {
+    width: 100%;
+    height: 68px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.wrap-main .sect-intro .intro-info .intro-info-ul > li {
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #b9cca4;
+}
+.wrap-main .sect-intro .intro-info .intro-info-ul > li:last-of-type {
+    border: none;
+}
+.wrap-main .sect-intro .intro-info .intro-info-ul > li p {
+    font-family: 'S-CoreDream', sans-serif;
+    font-weight: 400;
+}
+.wrap-main .sect-intro .intro-info .intro-info-ul > li .num {
+    color: #fff;
+    font-size: 46px;
+    letter-spacing: -0.7px;
+}
+.wrap-main .sect-intro .intro-info .intro-info-ul > li .txt {
+    margin-top: 5px;
+    color: #ffed70;
+    font-size: 20px;
+}
+/* //메인Intro */
+/* Section */
+.wrap-main .sect-benefit {
+    padding-top: 74px;
+    padding-bottom: 70px;
+}
+.wrap-main .sect-advantage {
+    background-color: #f0f0f0;
+    padding-top: 86px;
+    padding-bottom: 80px;
+}
+.wrap-main .sect-partner {
+    background-color: #f0f0f0;
+    padding-top: 92px;
+    padding-bottom: 80px;
+}
+.wrap-main .sect-shoping {
+    padding-top: 58px;
+    padding-bottom: 74px;
+}
+/* //Section */
+/* CarList */
+.wrap-main .sect-carlist {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.wrap-main .sect-carlist {
+    padding-top: 82px;
+    padding-bottom: 72px;
+}
+.wrap-main .sect-carlist .carlist-area .car-brand {
+    text-align: center;
+}
+.wrap-main .sect-carlist .carlist-area .car-brand img {
+    width: auto;
+}
+.wrap-main .sect-carlist .carlist-area .car-title-best {
+    font-family: 'S-CoreDream', sans-serif;
+    text-align: center;
+    color: #da0305;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: -4px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 10px 0 20px -9px;
+    width: 1100px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li {
+    position: relative;
+    margin: 0 1% 2%;
+    width: 23%;
+    border: 1px solid #c5c5c5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .btn-go-shop {
+    display: block;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-view {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-view .img-box {
+    position: relative;
+    width: 220px;
+    margin: 0 auto;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-name {
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-type {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-box {
+    padding: 0 15px;
+    padding-bottom: 28px;
+    margin-top: 10px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #c5c5c5;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li p {
+    color: #505050;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    font-size: 16px;
+    -webkit-transform: skew(-0.03deg);
+    -ms-transform: skew(-0.03deg);
+    transform: skew(-0.03deg);
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul li.info-fee .p-cont {
+    color: #e30000;
+    font-size: 23px;
+    font-weight: 700;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul li.info-fee .p-cont .span-won {
+    font-size: 18px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul li.info-payment .p-num {
+    color: #e30000;
+    font-size: 22px;
+    font-weight: 600;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-ul > li .btn-quote {
+    font-family: 'S-CoreDream', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #ffcc1d;
+    border-radius: 21px;
+    width: 98%;
+    height: 42px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-best-ul {
+    margin-top: 56px;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-best-ul > li {
+    position: relative;
+}
+.wrap-main .sect-carlist .carlist-area .carlist-best-ul > li::before {
+    position: absolute;
+    content: '';
+    width: 62px;
+    height: 62px;
+    left: -2px;
+    top: -31px;
+    background: url('http://static.meloncar.kr/img/main/icon_hot.png') no-repeat;
+    background-size: 62px 62px;
+}
+.wrap-main .sect-carlist .carlist-best {
+    margin-top: 52px;
+    padding-bottom: 20px;
+}
+.wrap-main .sect-carlist .car-notice {
+    color: #505050;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-top: 24px;
+}
+@media (max-width: 1125px) {
+    .wrap-main .sect-carlist .carlist-area .carlist-ul {
+        width: 100%;
+    }
+}
+/* //Carlist */
+/* QNA */
+.wrap-main .sect-qna {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.wrap-main .sect-qna .qna-area {
+    margin-top: 52px;
+}
+.wrap-main .sect-qna .qna-area .qna-ul {
+    width: 100%;
+    border: 1px solid #adadad;
+    border-bottom: none;
+}
+.wrap-main .sect-qna .qna-area .qna-ul > li .qna-title {
+    cursor: pointer;
+    border-bottom: 1px solid #adadad;
+    height: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 30px;
+    color: #242424;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    word-break: keep-all;
+}
+.wrap-main .sect-qna .qna-area .qna-ul > li .qna-title::before {
+    content: 'Q.';
+    color: #e93700;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.wrap-main .sect-qna .qna-area .qna-ul > li .txt-area {
+    border-bottom: 1px solid #adadad;
+    background-color: #f0f0f0;
+    display: none;
+    padding: 30px 50px;
+    color: #242424;
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    word-break: keep-all;
+    line-height: 1.3;
+}
+/* //QNA */
+/* shop 상세페이지 */
+.wrap-main .sect-shoping .shoping-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.wrap-main .sect-shoping .shoping-area * {
+    color: #505050;
+}
+.wrap-main .sect-shoping .shoping-area .car-view-box {
+    width: 530px;
+}
+.wrap-main .sect-shoping .shoping-area .car-view-box .car-viewer {
+    background-color: #f3f3f3;
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrap-main .sect-shoping .shoping-area .car-view-box .car-viewer .img-box {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box {
+    margin-left: 26px;
+    width: 502px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-name {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul {
+    margin-top: 15px;
+    border-top: 2px solid #c4c4c4;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li {
+    padding: 0 18px;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li p {
+    letter-spacing: -0.7px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li .p-name {
+    color: #1d7a0d;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li .p-cont {
+    font-size: 20px;
+    font-weight: 600;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee {
+    background-color: #f8f8f8;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 2px solid #c4c4c4;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee .p-name {
+    color: #505050;
+    font-weight: 600;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee .p-cont {
+    color: #e30000;
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee .p-cont .span-won {
+    color: #e30000;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* 리스,렌트 가격 */
+.shoping-area .car-info-box .info-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.shoping-area .car-info-box .info-cont > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 3px 10px;
+    width: 47%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #e8e8e8;
+}
+.shoping-area .car-info-box .info-cont .info-rent {
+    position: relative;
+    width: 56%;
+}
+.shoping-area .car-info-box .info-cont .info-rent:after {
+    content: '';
+    clear: both;
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 2px;
+    height: 64px;
+    background: url(http://static.meloncar.kr/img/main/icon_line.png) no-repeat;
+}
+
+.shoping-area .car-info-box .info-cont [class*='info-'] .text {
+    margin-left: 10px;
+}
+.shoping-area .car-info-box .info-cont [class*='info-'] .text b {
+    display: flex;
+    align-items: center;
+    font-size: 2.7rem;
+    letter-spacing: -1px;
+}
+.shoping-area .car-info-box .info-cont [class*='info-'] .text b span {
+    color: #010101;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.shoping-area .car-info-box .info-cont .info-rent .text {
+    margin-top: 15px;
+}
+.shoping-area .car-info-box .info-cont .info-rent .price1 {
+    border-bottom: 1px dotted #000;
+    box-sizing: border-box;
+}
+.shoping-area .car-info-box .info-cont .info-rent .text b {
+    padding: 2px 0;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+.shoping-area .car-info-box .info-cont .info-rent [class*='price'] strong {
+    margin-right: 5px;
+    font-size: 1.9rem;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: #000;
+}
+.shoping-area .car-info-box .info-cont .info-rent .price1,
+.shoping-area .car-info-box .info-cont .info-rent .text .price1 span {
+    color: #f30a0a;
+}
+.shoping-area .car-info-box .info-cont .info-rent .price2,
+.shoping-area .car-info-box .info-cont .info-rent .text .price2 span {
+    color: #4c7cd4;
+}
+.shoping-area .car-info-box .info-cont .info-rent .text b span {
+    margin-left: 3px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.shoping-area .car-info-box .info-cont .info-rent .text p {
+    margin-top: 0;
+    padding-bottom: 5px;
+    font-size: 1.65rem;
+}
+.shoping-area .car-info-box .info-cont .info-rent img {
+    width: 26%;
+}
+
+.shoping-area .car-info-box .info-cont .info-lease .text b {
+    display: block;
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
+    color: #010101;
+}
+
+.shoping-area .car-info-box .info-cont > div img {
+    width: 30%;
+}
+
+.shoping-area .car-info-box .info-cont > div .text p {
+    margin-top: 3px;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: -0.7px;
+    font-weight: 600;
+    color: #010101;
+}
+/* //리스,렌트 */
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-notice {
+    margin-top: 22px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .car-notice p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -0.7px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .btn-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .btn-quote {
+    font-family: 'S-CoreDream', sans-serif;
+    width: 314px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    height: 58px;
+    border-radius: 30px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .btn-bestcar {
+    width: 168px;
+    height: 58px;
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.35);
+    background-color: #d4d4d4;
+    font-family: 'S-CoreDream', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #000;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .new-button .btn-stabucks {
+    margin-bottom: 10px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano {
+    display: none;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano .bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 555;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 662px;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano img.img-pc {
+    display: block;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano img.img-m {
+    display: none;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano button span {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+/* //shop 상세페이지 */
+
+@media (max-width: 900px) {
+    html {
+        font-size: calc((10 / 750) * 100vw);
+    }
+    /* 공통 타이틀 */
+    .wrap-container .title-area .title-sub {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: -0.2rem;
+    }
+    .wrap-container .title-area .title-main {
+        font-size: 5.6rem;
+        font-weight: 500;
+        margin-top: 1.4rem;
+        letter-spacing: -0.5rem;
+    }
+    .wrap-container .sub-ment {
+        font-size: 2.1rem;
+        font-weight: 300;
+        margin-top: 3.2rem;
+        line-height: 1.4;
+        letter-spacing: -0.16rem;
+        word-break: keep-all;
+    }
+    .wrap-container .ment-area {
+        text-align: center;
+        margin-top: 4.6rem;
+    }
+    .wrap-container .ment-area p {
+        font-family: 'S-CoreDream', sans-serif;
+        line-height: 1.1;
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+    }
+    .wrap-container .ment-area .p-ment02 {
+        margin-top: 1.2rem;
+    }
+    /* //공통 타이틀 */
+    /* SideBanner */
+    .side-sect-right {
+        display: none;
+    }
+    /* 메인페이지 intro */
+    .wrap-main .sect-intro .intro-main {
+        width: 100%;
+    }
+    .wrap-main .sect-intro .intro-main .intro-visual {
+        overflow: hidden;
+        position: relative;
+    }
+    .wrap-main .sect-intro .intro-main .intro-visual .visual-cont {
+        left: 0;
+    }
+    .wrap-main .sect-intro .intro-main .intro-visual .img-box {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        min-width: auto;
+    }
+    .wrap-main .sect-intro .intro-info {
+        width: 100%;
+        height: 12.8rem;
+        background-color: #739949;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul {
+        height: 6.8rem;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li:nth-of-type(1) {
+        width: 20%;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li:nth-of-type(2) {
+        width: 32%;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li:nth-of-type(3) {
+        width: 28%;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li:nth-of-type(4) {
+        width: 20%;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li:last-of-type {
+        border: none;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li .num {
+        font-size: 4.6rem;
+    }
+    .wrap-main .sect-intro .intro-info .intro-info-ul > li .txt {
+        font-size: 2rem;
+    }
+    /* //메인페이지 intro */
+    /* section */
+    .wrap-main .sect-benefit {
+        padding-top: 7.4rem;
+        padding-bottom: 7rem;
+    }
+    .wrap-main .sect-advantage {
+        padding-top: 7rem;
+        padding-bottom: 8rem;
+    }
+    .wrap-main .sect-partner {
+        padding-top: 9.2rem;
+        padding-bottom: 8rem;
+    }
+    /* carlist */
+    .wrap-main .sect-carlist {
+        padding-top: 8.2rem;
+        padding-bottom: 7.2rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .car-brand {
+        margin-bottom: 3rem;
+        text-align: center;
+        height: 10rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .car-brand img {
+        width: auto;
+        height: 100%;
+    }
+    .wrap-main .sect-carlist .carlist-area .car-title-best {
+        text-align: center;
+        font-size: 5rem;
+        letter-spacing: -3px;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul {
+        margin: 0;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li {
+        width: 48%;
+        padding-top: 0;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li p {
+        -webkit-transform: skew(-0.03deg);
+        -ms-transform: skew(-0.03deg);
+        transform: skew(-0.03deg);
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .btn-go-shop {
+        display: block;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-view {
+        height: 15rem;
+        margin-top: 2.4rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-view .img-box {
+        width: 30rem;
+        margin: 0 auto;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-name {
+        margin-top: 2.4rem;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-type {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-box {
+        padding: 0 1.5rem;
+        padding-bottom: 3rem;
+        margin-top: 0;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul {
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li {
+        padding-top: 1rem;
+        padding-bottom: 0.8rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li p {
+        letter-spacing: -0.6px;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li .p-name {
+        font-size: 2.4rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul > li .p-cont {
+        font-size: 2.4rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul li.info-fee .p-cont {
+        font-size: 2.8rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .car-info-ul li.info-fee .p-cont .span-won {
+        font-size: 2.2rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-ul > li .btn-quote {
+        border-radius: 3rem;
+        height: 6rem;
+        font-size: 2.5rem;
+        margin: 0 auto;
+        margin-top: 1.8rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-best-ul {
+        margin-top: 46px;
+        row-gap: 5.6rem;
+    }
+    .wrap-main .sect-carlist .carlist-area .carlist-best-ul > li::before {
+        width: 8.5rem;
+        height: 8.4rem;
+        left: -0.3rem;
+        top: -4rem;
+        background-size: 8.5rem 8.4rem !important;
+    }
+    .wrap-main .sect-carlist .carlist-best {
+        margin-top: 5.2rem;
+        padding-bottom: 3rem;
+    }
+    .wrap-main .sect-carlist .car-notice {
+        font-size: 2.1rem;
+        padding-left: 2.8rem;
+        margin-top: 2.4rem;
+    }
+    /* /carlist */
+    /* QNA */
+    .wrap-main .sect-qna {
+        display: none;
+    }
+    /* shop 상세페이지 */
+    .wrap-main .sect-shoping {
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+    .wrap-main .sect-shoping .shoping-area {
+        padding: 0 3rem;
+        padding-bottom: 3.8rem;
+        display: block;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-view-box {
+        width: 100%;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-view-box .car-viewer {
+        width: 100%;
+        height: 46rem;
+        overflow: hidden;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-view-box .car-viewer .img-box {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5.2rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-name {
+        font-size: 4rem;
+        text-align: left;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul {
+        margin-top: 3.2rem;
+        border-top: 2px solid #c4c4c4;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li {
+        padding: 0 1.8rem;
+        padding-top: 1.8rem;
+        padding-bottom: 1.2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-bottom: 1px solid #c4c4c4;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li p {
+        -webkit-transform: skew(-0.03deg);
+        -ms-transform: skew(-0.03deg);
+        transform: skew(-0.03deg);
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li .p-name {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul > li .p-cont {
+        font-size: 2.8rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee .p-name {
+        font-size: 2.8rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee .p-cont {
+        font-size: 3.6rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-info-ul li.info-fee .p-cont .span-won {
+        font-size: 3rem;
+    }
+
+    .shoping-area .car-info-box .info-cont [class*='info-'] .text b {
+        font-size: 3.4rem;
+    }
+    .shoping-area .car-info-box .info-cont .info-rent [class*='price'] strong {
+        font-size: 2.4rem;
+    }
+    .shoping-area .car-info-box .info-cont .info-rent .text p {
+        font-size: 2.2rem;
+    }
+    .shoping-area .car-info-box .info-cont > div .text p {
+        font-size: 2.4rem;
+    }
+
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-notice {
+        margin-top: 2.2rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .car-notice p {
+        font-size: 2.2rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .btn-area {
+        margin-top: 2.2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .btn-quote {
+        font-size: 3.4rem;
+        letter-spacing: -1px;
+        width: 44.6rem;
+        height: 8.4rem;
+        border-radius: 4.2rem;
+        padding-top: 0.4rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .btn-bestcar {
+        width: 22.8rem;
+        background-color: #d4d4d4;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+        height: 8.4rem;
+        border-radius: 4.2rem;
+        padding-top: 0.2rem;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .new-button button {
+        width: 100%;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano .bg {
+        width: 100%;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano img.img-pc {
+        display: none;
+    }
+    .wrap-main .sect-shoping .shoping-area .car-info-box .stabucks-amricano img.img-m {
+        display: block;
+    }
+} /* //900 */

@@ -1,0 +1,105 @@
+/*푸터*/
+.land-wrap .land-container{
+    .sect-footer{
+        background-color: #0e0e0e;
+        .sect-container{
+            padding-bottom: 28px;
+            .footer-top{
+                padding-top: 15px;
+                padding-bottom: 17px;
+                width: 100%;
+                border-bottom: 1px solid #4d4d4d;
+                .logo{
+                    width: 106px;
+                    text-align: center;
+                    margin: 0 auto;
+                    // img{
+                    //     width: auto;
+                    // }
+                }
+            }
+            .footer-bottom{
+                margin-top: 22px;
+                display: flex;
+                justify-content: center;
+                .copy-area{
+                    p{
+                        font-family: 'Noto Sans KR', sans-serif;
+                        color: #b9b9b9;
+                        font-size: 15px;
+                        letter-spacing: -1px;
+                        line-height: 1.6;
+                        word-break: keep-all;
+                    }
+                    //아이폰 전화인식으로 인해 추가
+                    a{
+                        font-family: 'Noto Sans KR', sans-serif;
+                        color: #b9b9b9;
+                        font-size: 15px;
+                        letter-spacing: -1px;
+                        line-height: 1.6;
+                        word-break: keep-all;
+                    }
+                    .copy-company{
+                        &:nth-of-type(n+2){
+                            margin-top: 18px;
+                        }
+                    }
+                }
+                .btn-kakao{
+                    margin-left: 30px;
+                    width: 191px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    .land-wrap .land-container{
+        .sect-footer{
+            
+            .sect-container{
+                padding-bottom: 16.6rem;
+                .footer-top{
+                    padding-top: 1.8rem;
+                    padding-bottom: 1.7rem;
+                    
+                    
+                    .logo{
+                        width: 15.8rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .footer-bottom{
+                    margin-top: 2.2rem;
+                    
+                    .copy-area{
+                        padding-left: 3.8rem;
+                        padding-right: 3.0rem;
+                        p{
+                            font-size: 1.9rem;
+                            letter-spacing: -1px;
+                            line-height: 1.5;
+                            word-break: keep-all;
+                        }
+                        //아이폰 전화인식으로 인해 추가
+                        a{
+                            font-size: 1.9rem;
+                            letter-spacing: -1px;
+                            line-height: 1.5;
+                            word-break: keep-all;
+                        }
+
+                    }
+                    .btn-kakao{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

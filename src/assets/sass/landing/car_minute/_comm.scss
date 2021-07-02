@@ -1,0 +1,420 @@
+/*기본 공통 폼*/
+.land-wrap .land-common {
+    .sect-container {
+        position: relative;
+
+        .img-bg {
+            overflow-x: hidden;
+            width: 100%;
+
+            img {
+                min-width: 1900px
+            }
+
+        }
+
+        .contents-area {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+
+            .ask-area {
+                padding-top: 50px;
+                padding-bottom: 82px;
+                position: relative;
+                max-width: 1196px;
+                width: 100%;
+                // min-height: 725px;
+                margin: 0 auto;
+                background-color: rgba(0, 0, 0, 0.7);
+                // background-color: #fff;
+                box-shadow: 4px 4px 40px 20px rgba(0, 0, 0, 0.45);
+
+                .top-ment {
+                    width: 556px;
+                    margin: 0 auto;
+                }
+
+                .ment-main {
+                    margin-top: 100px;
+
+                    .txt-box {
+
+                        color: #ae4dff;
+                        font-size: 75px;
+                        text-align: center;
+                        letter-spacing: -1.2px;
+
+                        ruby {
+                            position: relative;
+
+                            rt {
+                                color: #e345ff;
+                                transform: translateY(-12px);
+                                font-size: 13px;
+
+                            }
+                        }
+
+                        i {
+                            margin-left: -7px;
+                        }
+
+                        .color-pink {
+                            color: #e345ff;
+                        }
+
+                        .color-marin {
+                            color: #5f3afc;
+                        }
+
+                        .color-violet {
+                            color: #d4a0ff;
+                        }
+
+                        .color-hotpink {
+                            color: #dd69e4;
+                        }
+                    }
+
+                }
+
+                .txt-twoline {
+                    margin-top: 54px;
+                }
+
+                .ment-ask {
+                    margin-top: 42px;
+
+                    .txt-box {
+                        color: #939393;
+                        font-size: 42px;
+                        font-weight: 200;
+                        text-align: center;
+                        letter-spacing: -1.0px;
+                        line-height: 1.3;
+
+                        .span-q {
+                            color: #fff;
+                            font-size: 50px;
+                            font-weight: 400;
+                            display: inline-block;
+                            transform: translateY(4px);
+                            margin-right: 5px;
+                        }
+
+                        .span-strong {
+                            color: #fff;
+                            font-weight: 400;
+                        }
+                    }
+
+                }
+
+                .choose-area {
+                    margin-top: 66px;
+                }
+
+                .check-area {
+                    margin-top: 32px;
+                }
+
+                .choose-area,
+                .check-area {
+                    display: flex;
+                    justify-content: center;
+                    // margin: 0 auto;
+
+                    .choose-btn {
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #000;
+                        border: 2px solid #535353;
+                        border-radius: 50%;
+                        width: 112px;
+                        height: 112px;
+
+                        .img-box {
+                            width: 32px;
+                            padding-left: 9px;
+
+                            .on {
+                                display: none;
+                            }
+                        }
+
+                        .p-txt {
+                            margin-top: 7px;
+                            font-family: 'GmarketSans', sans-serif;
+                            color: #a5a5a5;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+
+                        &:hover {
+                            border-color: #fff;
+
+                            .on {
+                                display: block;
+                            }
+
+                            .off {
+                                display: none;
+                            }
+
+                            .p-txt {
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .btn-no {
+                        margin-left: 40px;
+                    }
+                }
+
+                .btn-skip {
+                    position: absolute;
+                    display: flex;
+                    bottom: 20px;
+                    right: 25px;
+
+                    .p-txt {
+                        font-family: 'GmarketSans', sans-serif;
+                        color: #9e9d9d;
+                        font-size: 16px;
+                        letter-spacing: -1px;
+
+                        .icon-arrow-duble {
+                            vertical-align: middle;
+                            font-size: 12px;
+                            margin-left: 8px;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .land-wrap .land-common {
+        .sect-container {
+
+            .img-bg {
+                background-color: #030303;
+                padding-top: 27.1rem;
+
+                img {
+                    min-width: auto;
+                    width: auto;
+                    height: 87.7rem;
+                }
+
+            }
+
+            .contents-area {
+                height: 100%;
+
+                .ask-area {
+                    height: 100%;
+                    padding-top: 8.0rem;
+
+                    // padding-bottom: 82px;
+                    .btn-close {
+                        position: absolute;
+                        top: 2.0rem;
+                        right: 1.6rem;
+                        width: 4.6rem;
+                    }
+
+                    .top-ment {
+                        width: 59.0rem;
+                    }
+
+                    .ment-main {
+                        margin-top: 19.0rem;
+
+                        .txt-box {
+                            font-size: 8.5rem;
+                            line-height: 1.4;
+                            letter-spacing: -0.4rem;
+                            word-break: keep-all;
+
+                            ruby {
+                                position: relative;
+
+                                rt {
+                                    transform: translateY(-1.0rem);
+                                    font-size: 1.4rem;
+                                }
+                            }
+
+                            i {
+                                margin-left: -0.8rem;
+                            }
+
+                            .m-block {
+                                display: block;
+                            }
+                        }
+
+                    }
+
+                    .txt-twoline {
+                        margin-top: 19.0rem;
+                    }
+
+                    .ment-ask {
+                        margin-top: 9.0rem;
+
+                        .txt-box {
+                            font-size: 3.5rem;
+                            letter-spacing: -1.0px;
+                            line-height: 1.3;
+
+                            .span-q {
+                                font-size: 4.5rem;
+                                display: block;
+                                transform: none;
+                                margin-right: 0;
+                                margin-bottom: 1.0rem;
+                            }
+
+                            .span-strong {}
+
+                        }
+
+                    }
+
+                    .choose-area {
+                        margin-top: 8.5rem;
+                    }
+
+                    .choose-area {
+                        margin-top: 3.2rem;
+                    }
+
+                    .choose-area,
+                    .check-area {
+
+                        .choose-btn {
+                            border: 2px solid #535353;
+                            width: 13.4rem;
+                            height: 13.4rem;
+
+                            .img-box {
+                                width: auto;
+                                // padding-left: 1.0rem;
+                                padding-left: 1.0rem;
+
+                                img {
+                                    width: 3.8rem;
+                                }
+                            }
+
+                            .p-txt {
+                                margin-top: 1.2rem;
+                                color: #a5a5a5;
+                                font-size: 2.2rem;
+                            }
+                        }
+
+                        .btn-no {
+                            margin-left: 3.4rem;
+                        }
+                    }
+
+                    .btn-skip {
+                        .p-txt {
+
+                            .icon-arrow-duble {}
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.land-wrap .land-common {
+    .btn-check {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        border: 2px solid #535353;
+        border-radius: 50%;
+        width: 112px;
+        height: 112px;
+
+        .img-box {
+            width: 32px;
+            padding-left: 9px;
+
+            .on {
+                display: none;
+            }
+        }
+
+        .p-txt {
+            margin-top: 7px;
+            font-family: 'GmarketSans', sans-serif;
+            color: #a5a5a5;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &:hover {
+            border-color: #fff;
+
+            .on {
+                display: block;
+            }
+
+            .off {
+                display: none;
+            }
+
+            .p-txt {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .land-wrap .land-common {
+        .btn-check {
+            border: 2px solid #535353;
+            width: 13.4rem;
+            height: 13.4rem;
+
+            .img-box {
+                width: auto;
+                // padding-left: 1.0rem;
+                padding-left: 1.0rem;
+
+                img {
+                    width: 3.8rem;
+                }
+            }
+
+            .p-txt {
+                margin-top: 1.2rem;
+                color: #a5a5a5;
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

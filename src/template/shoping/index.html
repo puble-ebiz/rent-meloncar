@@ -1,0 +1,168 @@
+@@include('../include/_head_top.html')
+<!--전용js-->
+<script src="http://static.meloncar.kr/js/shopping/init.js"></script>
+<!-- <script src="../../assets/js/landing/meloncar/land_init.js"></script> -->
+<!--./전용js-->
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        @@include('../include/_header.html')
+        <main class="wrap-container wrap-main">
+            <!--지식쇼핑부분-->
+            <section class="sect sect-shoping">
+                <div class="contents">
+                    <div class="sect-container">
+                        <div class="shoping-area">
+                            <div class="car-view-box">
+                                <div class="car-viewer">
+                                    <div class="img-box"><img
+                                            src="http://static.meloncar.kr/img/carlist/hyundai/avante.png" alt="이미지">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-info-box">
+                                <p class="car-name">카니발</p>
+                                <ul class="car-info-ul">
+                                    <li class="info-brand">
+                                        <p class="p-name">제조사</p>
+                                        <p class="p-cont">기아자동차</p>
+                                    </li>
+                                    <li class="info-name">
+                                        <p class="p-name">차종</p>
+                                        <p class="p-cont">카니발 KA4</p>
+                                    </li>
+                                    <li class="info-grade">
+                                        <p class="p-name">등급</p>
+                                        <p class="p-cont">준중형차</p>
+                                    </li>
+                                    <li class="info-date">
+                                        <p class="p-name">출시년도</p>
+                                        <p class="p-cont">2021</p>
+                                    </li>
+
+                                </ul>
+                                <div class="info-cont">
+                                    <div class="info-rent">
+                                        <img src="http://static.meloncar.kr/img/main/icon_rent.png" />
+                                        <div class="text">
+                                            <!-- 2021.06.25 -->
+                                            <!-- 선수금 추가, 클래스 추가:price1 -->
+                                            <b class="price1">
+                                                <!-- strong 태그 추가 -->
+                                                <strong>선수금</strong>
+                                                257,093<span>원</span>
+                                            </b>
+                                            <!-- //선수금 추가 -->
+                                            <!-- 보증금 추가, 클래스 추가:price2 -->
+                                            <b class="price2">
+                                                <!-- strong 태그 추가 -->
+                                                <strong>보증금</strong>
+                                                347,093<span>원</span>
+                                            </b>
+                                            <!-- //보증금 추가 -->
+                                            <!-- //2021.06.25 -->
+                                            <p>딜러할인 미적용</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-lease">
+                                        <img src="http://static.meloncar.kr/img/main/icon_lease.png" />
+                                        <div class="text">
+                                            <b>문의하기</b>
+                                            <p>딜러할인 미적용</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-quote fn-open-consult">
+                                        <img src="http://static.meloncar.kr/img/main/melon_bt.gif" alt="비재면자동견적요청" />
+                                    </button>
+                                    <button type="button" class="btn-bestcar" data-move-scroll="sect-carlist">
+                                        다른 추천차종
+                                    </button>
+                                </div>
+                                <div class="new-button">
+                                    <button type="button" class="btn-stabucks"><img
+                                            src="http://static.meloncar.kr/img/main/banner_starbusk.jpg "
+                                            alt="스타벅스 아메리카노" /></button>
+                                    <!-- 2021.06.29 무료숙박권 배너 삭제 -->
+                                    <!-- <button type="button" class="btn-event">
+                                        <img src="http://static.meloncar.kr/img/main/banner_hotel.jpg"
+                                            alt="호텔/리조트 무료숙박권" />
+                                    </button> -->
+                                </div>
+
+                                <div class="stabucks-amricano">
+                                    <div class="bg">
+                                        <div class="imgBox">
+                                            <img class="img-pc"
+                                                src="https://static.carminute.co.kr/img/landing/starbucks/starbucks_popup.jpg"
+                                                alt="" />
+                                            <img class="img-m"
+                                                src="https://static.carminute.co.kr/img/landing/starbucks/starbucks_popup_m.jpg"
+                                                alt="" />
+                                            <button type="button" class="btn-close-pop"><span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--.//지식쇼핑부분-->
+            <!-- 하단 상담신청바 -->
+            <div class="consult-bar">
+                <div class="inner">
+                    <h4>
+                        <img src="http://static.meloncar.kr/img/main/bottom_img01.png" alt="장기렌터카 간편 상담신청">
+                    </h4>
+                    <form action="" class="user-info">
+                        <ul>
+                            <li>
+                                <label for="user-name">성함</label>
+                                <input id="user-name" type="text" placeholder="고객명" />
+                            </li>
+                            <li>
+                                <label for="user-wish">희망모델</label>
+                                <input id="user-wish" type="text" placeholder="차종입력" />
+                            </li>
+                            <li>
+                                <label for="user-phone">연락처</label>
+                                <input id="user-phone" type="text" placeholder="번호만 입력('-'제외)" />
+                            </li>
+                        </ul>
+                        <!-- 2021.06.22 개인정보수집 추가 -->
+                        <div class="agreement">
+                            <input type="checkbox" id="check-agreement" checked>
+                            <label for="check-agreement">
+                                <span>개인정보 수집동의</span>
+                            </label>
+                            <button type="button" class="btn-more">보기</button>
+                        </div>
+                        <!-- 2021.06.22 개인정보수집 추가 -->
+                        <button class="btn-estimate">
+                            <img src="http://static.carminute.co.kr/img/landing/car_minute/landing/btn-receive.png"
+                                alt="지금 견적받기">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- //하단 상담신청바 -->
+            @@include('./_contents/_sect_partner.html')
+            @@include('./_contents/_sect_benefit.html')
+            @@include('./_contents/_sect_advantage.html')
+            @@include('./_contents/_sect_carlist.html')
+            @@include('./_contents/_sect_qna.html')
+        </main>
+        @@include('./_side_cont.html')
+
+
+        @@include('../include/_footer.html')
+    </div>
+</body>
+
+</html>

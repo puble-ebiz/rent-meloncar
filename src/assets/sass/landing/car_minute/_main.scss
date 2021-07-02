@@ -1,0 +1,62 @@
+/*메인*/
+html{
+    height: 100%;
+}
+.body-main{
+    // background-color: #080607;
+    background-color: #969696;
+    // background-color: #fff;
+    height: 100%;
+    position: relative;
+}
+.land-wrap{
+    height: 100%;
+    position: relative;
+}
+
+.land-wrap .land-main{
+    .sect-main{
+        
+        .sect-container{
+            .img-bg{
+        
+                
+            }
+            
+            
+        }
+        
+    }
+}
+
+@media(max-width:900px){
+    .land-wrap .land-main{
+        .sect-main{
+    
+            .sect-container{
+                .img-bg{
+            
+                }
+                .btn-box{
+               
+                    bottom: 20.0rem;
+
+                    .btn-go{
+                        width: 28.0rem;
+    
+                        img{
+              
+                        }
+                        &:hover{
+       
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+
+

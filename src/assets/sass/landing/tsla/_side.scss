@@ -1,0 +1,496 @@
+/*사이드 배너*/
+.land-wrap .land-common {
+    .side-sect-right {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+
+        .side-area-consult {
+            left: 628px;
+            top: 112px;
+            position: absolute;
+            width: 208px;
+            background-color: #0e0e0e;
+            border-radius: 24px;
+            padding-top: 20px;
+            padding-bottom: 12px;
+            box-shadow: 2px 2px 30px 6px rgba(0, 0, 0, 0.33);
+
+            * {
+                font-family: 'GmarketSans', sans-serif;
+            }
+
+            &>* {
+
+                margin: 0 auto;
+            }
+
+            .top-title-box {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon-tel {
+                    width: 25px;
+                }
+
+                .title {
+                    margin-left: 8px;
+                    // text-align: center;
+                    color: #d4a0ff;
+                    font-size: 22px;
+
+                }
+            }
+
+
+            .in-consult-box {
+                margin: 0 auto;
+                margin-top: 12px;
+                width: 167px;
+
+                input {
+                    background-color: #0e0e0e;
+                    width: 100%;
+                    height: 44px;
+                    margin-bottom: 5px;
+                    border: 1px solid #777;
+                    padding-left: 15px;
+                    color: #d2d2d2;
+                    font-size: 16px;
+
+                    // color: #fff;
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+
+                    &::placeholder {
+                        color: #d2d2d2;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .policy-box {
+                margin: 0 auto;
+                margin-top: 12px;
+
+                .policy-txt {
+                    text-align: center;
+                    color: #d2d2d2;
+                    // line-height: 1.2;
+                    font-size: 14px;
+                    font-weight: 300;
+
+                    .btn-show-policy {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .btn-request-consult {
+                margin-top: 10px;
+                font-family: 'NanumBarunGothic', sans-serif;
+                background-color: #5e39ad;
+                width: 166px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 18px;
+                // line-height: 1.8;
+            }
+
+            .p-tel {
+                color: #fff;
+                text-align: center;
+                margin-top: 14px;
+                font-size: 22px;
+            }
+        }
+
+
+    }
+}
+
+@media(max-width:900px) {
+    .land-wrap .land-common {
+        .side-sect-right {
+            display: none;
+        }
+    }
+}
+
+.overflow-hidden,
+.overflow-hidden2 {
+    overflow: hidden;
+}
+
+/*개인정보보호정책(안씀)*/
+.modal-privacy-policy {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .policy-area {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 780px;
+        height: 486px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 12px;
+        padding-left: 25px;
+        padding-right: 18px;
+        padding-top: 50px;
+        padding-bottom: 45px;
+
+        .policy-textarea {
+            resize: none;
+
+            width: 100%;
+            // height: 100%;
+            height: 100%;
+            overflow-y: auto;
+            color: #747474;
+            font-size: 21px;
+            letter-spacing: -1.2px;
+            line-height: 1.26;
+            white-space: pre-wrap;
+
+            .tit {
+                color: #000;
+                // font-weight: 00;
+            }
+
+        }
+
+        .btn-close-policy {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+}
+
+
+/*개인정보보호정책(신규)*/
+.pop-policy-wrap {
+    display: none;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .pop-policy {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 790px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 0 25px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+        .policy-textarea {
+            resize: none;
+            height: 370px;
+            width: 100%;
+            overflow-y: auto;
+            color: #747474;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -1.2px;
+            line-height: 1.2;
+            white-space: pre-wrap;
+            word-break: keep-all;
+
+            .tit-main {
+                color: #000;
+                font-weight: 700;
+                font-size: 26px;
+            }
+
+            .tit {
+                color: #000;
+                font-weight: 500;
+            }
+
+        }
+
+        .btn-close-policy {
+            display: block;
+            background-color: #8716b8;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 427px;
+            height: 68px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            border-radius: 34px;
+            letter-spacing: -0.8px;
+        }
+    }
+
+}
+
+@media(max-width:900px) {
+    .pop-policy-wrap {
+        .pop-policy {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 1.2rem;
+            padding: 0 2.5rem;
+            padding-top: 5.0rem;
+            padding-bottom: 4.0rem;
+
+            .policy-textarea {
+                resize: none;
+                height: 32.0rem;
+                font-size: 2.0rem;
+                font-weight: 500;
+
+
+                .tit-main {
+                    color: #000;
+                    font-weight: 700;
+                    font-size: 2.6rem;
+                }
+
+                .tit {
+                    color: #000;
+                    font-weight: 500;
+                }
+
+            }
+
+            .btn-close-policy {
+                display: block;
+                background-color: #8716b8;
+                margin: 0 auto;
+                margin-top: 2.0rem;
+                width: 60%;
+                height: 7.6rem;
+                color: #fff;
+                font-size: 3.2rem;
+                font-weight: 500;
+                border-radius: 3.8rem;
+                letter-spacing: -0.8px;
+            }
+        }
+
+    }
+}
+
+
+
+
+/*컴플리스 박스*/
+.modal-complete-request,{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .complete-area {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        overflow-x: hidden;
+        border-radius: 12px;
+        width: 530px;
+        margin: 0 auto;
+        padding-top: 2.0rem;
+        text-align: center;
+
+        .btn-close-complete {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .top-logo {
+            width: 164px;
+            margin: 0 auto;
+        }
+
+        .message-main {
+            margin-top: 44px;
+
+            p {
+                color: #000;
+                letter-spacing: -1px;
+            }
+
+            .txt-pc {
+
+                font-size: 40px;
+
+                // span {
+                //     display: block;
+                    
+                // }
+                .mark{
+                    // color: #fff;
+                    font-weight: 600;
+                }
+            }
+
+            .txt-mobile {
+                display: none;
+            }
+
+        }
+
+        .line-bar {
+            width: 306px;
+            height: 2px;
+            background-color: #dadada;
+            margin: 0 auto;
+            margin-top: 22px;
+        }
+
+        .message-sub {
+            margin-top: 20px;
+            line-height: 1.3;
+            color: #747474;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: -1px;
+
+            .mark,
+            .name,
+            .phone,
+            .car {
+                color: #621b74;
+                font-weight: 700;
+            }
+        }
+
+        .btn-go-complte {
+            margin-top: 30px;
+            font-family: 'GmarketSans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9528b0;
+            width: 100%;
+            color: #fff;
+            font-size: 25px;
+            height: 62px;
+            padding-top: 8px;
+            letter-spacing: -2.4px;
+        }
+    }
+}
+
+
+@media(max-width:900px) {
+    .modal-complete-request{
+        .complete-area {
+            border-radius: 1.2rem;
+            width: 53.0rem;
+            margin: 0 auto;
+            padding-top: 5.0rem;
+
+            .btn-close-complete {
+                top: 1.5rem;
+                right: 1.5rem;
+                width: 3.0rem;
+            }
+
+            .top-logo {
+                width: 24.2rem;
+            }
+
+            .message-main {
+                margin-top: 3.4rem;
+
+                p {}
+
+                .txt-pc {
+                    display: none;
+                }
+
+                .txt-mobile {
+                    font-size: 6.2rem;
+                    font-weight: 700;
+                    display: block;
+                }
+
+            }
+
+            .line-bar {
+                width: 45.2rem;
+            }
+
+            .message-sub {
+                margin-top: 4.2rem;
+                line-height: 1.4;
+                font-size: 3.2rem;
+                font-weight: 700;
+                letter-spacing: -0.05rem;
+
+                .mark,
+                .name,
+                .phone,
+                .car {
+                    color: #621b74;
+                    font-weight: 700;
+                }
+            }
+
+            .btn-go-complte {
+                margin-top: 5.5rem;
+
+
+                width: 100%;
+
+                font-size: 25px;
+                height: 8.0rem;
+                padding-top: 8px;
+                letter-spacing: -0.3rem;
+            }
+        }
+    }
+}
+
+
+// .modal-complete-request-tsla {
+//     .message-main {
+//         .txt-pc {
+//             span {
+//                 display: block;
+//                 font-weight: 500;
+//             }
+//         }
+//     }
+// }

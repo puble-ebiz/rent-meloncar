@@ -1,0 +1,67 @@
+<!--자동차 리스트-->
+<section class="sect sect-carlist">
+    <div class="contents">
+        <div class="sect-container">
+            <div class="title-area">
+                <p class="title-sub">[ 멜론카의 최신 제안 ]</p>
+                <p class="title-main">장기렌탈 인기 차종</p>
+            </div>
+            <p class="sub-ment">
+                선수금 : 40%, 할부 : 48개월 기준<br>
+                보험료 / 자동차세 / 등록세 등 세금 일절 포함, 차량용품 혜택 (선팅, 블랙박스 등)<br>
+                그 외 추가 지출되는 비용없음
+            </p>
+            <div class="carlist-area carlist-best">
+                <p class="car-title-best">멜론카 인기베스트</p>
+                <ul class="carlist-ul carlist-best-ul">
+                    @@loop('../_carlist/_carlist_temp.html','./shoping/_carlist/_carlist_best.json')
+                </ul>
+            </div>
+            <div class="carlist-area">
+                <div class="car-brand">
+                    <img src="http://static.meloncar.kr/img/main/brand_hyundai.png" alt="헌대 자동차">
+                </div>
+                <ul class="carlist-ul">
+                    @@loop('../_carlist/_carlist_temp.html','./shoping/_carlist/_carlist_info.json')
+                </ul>
+            </div>
+            <div class="carlist-area">
+                <div class="car-brand">
+                    <img src="http://static.meloncar.kr/img/main/brand_kia.png" alt="기아 자동차">
+                </div>
+                <ul class="carlist-ul">
+                    @@loop('../_carlist/_carlist_temp.html','./shoping/_carlist/_carlist_info.json')
+                </ul>
+            </div>
+            <div class="carlist-area">
+                <div class="car-brand">
+                    <img src="http://static.meloncar.kr/img/main/brand_genesis.png" alt="제네시스 자동차">
+                </div>
+                <ul class="carlist-ul">
+
+                    @@loop('../_carlist/_carlist_temp.html','./shoping/_carlist/_carlist_info.json')
+
+                </ul>
+            </div>
+            <div class="carlist-area">
+                <div class="car-brand">
+                    <img src="http://static.meloncar.kr/img/main/brand_ssanyong.png" alt="쌍용 자동차">
+                </div>
+                <ul class="carlist-ul">
+
+                    @@loop('../_carlist/_carlist_temp.html','./shoping/_carlist/_carlist_info.json')
+
+                </ul>
+            </div>
+
+            <p class="car-notice">
+                ● 실제 견적시 등급, 옵션에 따라 월요금은 달라질 수 있습니다.
+            </p>
+            <div class="ment-area">
+                <p class="p-ment01">국산/수입 전 세계 모든 차종</p>
+                <p class="p-ment02">지금 희망 차량의 최저가 견적을 확인하세요.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--./자동차 리스트-->

@@ -1,0 +1,44 @@
+[
+    {
+        "img": "ldWEbUSBvE9RNVOwHiABNe6XYXK019nhdEHrs4Io.png",
+        "name": "쏘나타",
+        "grade": "중형차",
+        "rent_fee": "236,913"
+    },
+    {
+        "img": "2w1ZOQcG7XmiiGbeO2JFsDTcJQHy83jkCddAZvE9.png",
+        "name": "투싼",
+        "grade": "RV",
+        "rent_fee": "188,937"
+    },
+    {
+        "img": "Wf2d2iMLOpbGphcCFWJwEiERFaazlPLbzHSpcq7O.png",
+        "name": "팰리세이드",
+        "grade": "RV",
+        "rent_fee": "272,109"
+    },
+    {
+        "img": "h8EagiO2T8IIDhEaHMRrwEAfk9g05Rs5WjbGR9Gn.png",
+        "name": "싼타페",
+        "grade": "RV",
+        "rent_fee": "222,273"
+    },
+    {
+        "img": "5jLVa6W4Ik70WlNENwDSjsI2rZ08HEunbpo6ANOB.png",
+        "name": "넥쏘",
+        "grade": "중형차",
+        "rent_fee": "133,561"
+    },
+    {
+        "img": "Zh61k4uEssHCLfb5cFlZ5pl5sodNVXOuP8M2UKdt.png",
+        "name": "마이티",
+        "grade": "트럭/화물",
+        "rent_fee": "296,760"
+    },
+    {
+        "img": "YtH3GFBQHY0kV44daDVPzgGg2AIzjSAjjvYVf6Yy.png",
+        "name": "메가트럭",
+        "grade": "트럭/화물",
+        "rent_fee": "535,157"
+    }
+]

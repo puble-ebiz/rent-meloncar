@@ -1,0 +1,282 @@
+@media (max-width: 900px) {
+    html {
+        font-size: calc((10 / 750) * 100vw);
+    }
+}
+
+.wrap-container {
+    position: relative;
+    .title-area {
+        text-align: center;
+        * {
+            font-family: 'S-CoreDream', sans-serif;
+            line-height: 1.1;
+        }
+        .title-sub {
+            color: #000;
+            font-size: 40px;
+            font-weight: 500;
+            word-break: keep-all;
+            letter-spacing: -1.8px;
+        }
+        .title-main {
+            color: #ff6c00;
+            font-size: 60px;
+            font-weight: 400;
+            margin-top: 18px;
+            word-break: keep-all;
+            // letter-spacing: -4.9px;
+            letter-spacing: -5.8px;
+        }
+    }
+    .sub-ment {
+        font-family: 'S-CoreDream', sans-serif;
+        color: #000;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 36px;
+        line-height: 1.4;
+        letter-spacing: -1px;
+        word-break: keep-all;
+    }
+
+    .ment-area {
+        text-align: center;
+        margin-top: 46px;
+        p {
+            font-family: 'S-CoreDream', sans-serif;
+            line-height: 1.1;
+            font-size: 38px;
+            letter-spacing: -2px;
+        }
+        .p-ment01 {
+            color: #686868;
+            font-weight: 400;
+        }
+        .p-ment02 {
+            margin-top: 14px;
+            color: #000;
+            font-weight: 500;
+        }
+    }
+
+    /* //견적상담받기 bar */
+
+    // .consult-bar {
+    //     display: none;
+    //     position: fixed;
+    //     left: 0;
+    //     bottom: 0;
+    //     z-index: 99;
+    //     width: 100%;
+    //     height: 70px;
+    //     background-color: #001d1a;
+    //     .inner {
+    //         display: flex;
+    //         margin: 0 auto;
+    //         width: 63%;
+    //         height: 100%;
+    //     }
+    //     h4 {
+    //         position: relative;
+    //         width: 190px;
+    //         img {
+    //             position: absolute;
+    //             left: 0;
+    //             top: -35px;
+    //             width: 100%;
+    //             height: auto;
+    //         }
+    //     }
+    //     .user-info {
+    //         width: calc(100% - 356px);
+    //         ul {
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+    //             height: 100%;
+    //             li {
+    //                 color: #fff;
+    //                 label {
+    //                     margin-right: 15px;
+    //                 }
+    //                 input {
+    //                     padding-left: 10px;
+    //                     height: 35px;
+    //                     box-sizing: border-box;
+    //                     &::placeholder {
+    //                         font-family: 'NanumSquare', sans-serif;
+    //                         font-size: 16px;
+    //                         letter-spacing: -1px;
+    //                         color: #000;
+    //                     }
+    //                 }
+    //                 &:nth-child(2) {
+    //                     margin: 0 15px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     .btn-estimate {
+    //         width: 166px;
+    //     }
+    // }
+    /* //견적상담받기 bar */
+}
+
+/* 견적상담받기 bar */
+.wrap-container .consult-bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 70px;
+    background-color: #001d1a;
+}
+.wrap-container .consult-bar .inner {
+    margin: 0 auto;
+    width: 1110px;
+    height: 100%;
+}
+.wrap-container .consult-bar h4 {
+    position: relative;
+    top: -30px;
+    left: 0;
+    float: left;
+    width: 190px;
+}
+.wrap-container .consult-bar .user-info {
+    text-align: center;
+}
+.wrap-container .consult-bar .user-info ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 이미지190,166 간격10*3 */
+    width: calc(100% - 356px);
+    height: 70px;
+}
+.wrap-container .consult-bar .user-info ul li {
+    margin-left: 10px;
+}
+.wrap-container .consult-bar .user-info ul li:first-child {
+    margin-left: 0;
+}
+.wrap-container .consult-bar .user-info input {
+    padding-left: 10px;
+    height: 35px;
+}
+.wrap-container .consult-bar .user-info label {
+    margin-right: 8px;
+    color: #fff;
+}
+.wrap-container .consult-bar .btn-estimate {
+    float: left;
+    width: 166px;
+    height: 70px;
+}
+.wrap-container .consult-bar .user-info ul li input::-webkit-input-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.wrap-container .consult-bar .user-info ul li input::-moz-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.wrap-container .consult-bar .user-info ul li input:-ms-input-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.wrap-container .consult-bar .user-info ul li input::-ms-input-placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.wrap-container .consult-bar .user-info ul li input::placeholder {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+@media (max-width: 1750px) {
+    .wrap-container .consult-bar .inner {
+        width: 75%;
+    }
+}
+@media (max-width: 1425px) {
+    .wrap-container .consult-bar .user-info label {
+        display: none;
+    }
+}
+@media (max-width: 1140px) {
+    .wrap-container .consult-bar .inner {
+        width: 98%;
+    }
+}
+@media (max-width: 900px) {
+    .wrap-container .consult-bar {
+        display: none;
+    }
+}
+/* //견적상담받기 bar */
+
+@media (max-width: 900px) {
+    .wrap-container {
+        .title-area {
+            .title-sub {
+                font-size: 3.4rem;
+                font-weight: 500;
+                letter-spacing: -0.2rem;
+            }
+            .title-main {
+                font-size: 5.6rem;
+                font-weight: 500;
+                margin-top: 1.4rem;
+                letter-spacing: -0.5rem;
+            }
+        }
+        .sub-ment {
+            font-size: 2.1rem;
+            font-weight: 300;
+            margin-top: 3.2rem;
+            line-height: 1.4;
+            letter-spacing: -0.16rem;
+            word-break: keep-all;
+        }
+
+        .ment-area {
+            text-align: center;
+            margin-top: 4.6rem;
+            p {
+                font-family: 'S-CoreDream', sans-serif;
+                line-height: 1.1;
+                font-size: 3.5rem;
+                letter-spacing: -2px;
+            }
+            .p-ment01 {
+            }
+            .p-ment02 {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}
+
+@import './_cont';
+@import './_shoping';
+@import './_intro';
+@import './_carlist';
+@import './_qna';
+@import './_side';

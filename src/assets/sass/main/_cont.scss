@@ -1,0 +1,40 @@
+
+.wrap-main .sect-benefit{
+    padding-top: 74px;
+    padding-bottom: 70px;
+}
+
+
+.wrap-main .sect-advantage{
+    background-color: #f0f0f0;
+    padding-top: 86px;
+    padding-bottom: 80px;
+}
+
+.wrap-main .sect-partner{
+    background-color: #f0f0f0;
+    padding-top: 92px;
+    padding-bottom: 80px;
+}
+
+
+
+@media(max-width:900px){
+
+    .wrap-main .sect-benefit{
+        padding-top: 7.4rem;
+        padding-bottom: 7.0rem;        
+    }
+
+    .wrap-main .sect-advantage{
+        padding-top: 7.0rem;
+        padding-bottom: 8.0rem;
+    }
+    
+    .wrap-main .sect-partner{
+        padding-top: 9.2rem;
+        padding-bottom: 8.0rem;
+    }
+    
+    
+}

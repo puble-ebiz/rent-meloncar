@@ -1,0 +1,33 @@
+.side-sect-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+    .side-area {
+        right: 30px;
+        top: 150px;
+        position: absolute;
+        .side-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 18px;
+            text-align: center;
+            .btn-rent {
+                margin-left: 20px;
+            }
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            img {
+                width: auto;
+            }
+        } //side-item
+    }
+}
+@media (max-width: 900px) {
+    .side-sect-right {
+        display: none;
+    }
+}

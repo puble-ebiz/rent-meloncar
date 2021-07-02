@@ -1,0 +1,389 @@
+.wrap-main .sect-shoping {
+    padding-top: 58px;
+    padding-bottom: 74px;
+    .shoping-area {
+        // padding: 46px;
+        // background-color: #4d4d4d;
+        display: flex;
+        justify-content: space-between;
+        * {
+            color: #505050;
+        }
+        .car-view-box {
+            width: 530px;
+            .car-viewer {
+                background-color: #f3f3f3;
+                border: 1px solid #b8b8b8;
+                width: 100%;
+                // height: 490px;
+                height: 100%;
+                // padding-top: 170px;
+
+                overflow: hidden;
+                .img-box {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .car-info-box {
+            margin-left: 26px;
+            width: 502px;
+            .car-name {
+                font-size: 28px;
+                font-weight: 600;
+                letter-spacing: -0.6px;
+            }
+            .car-info-ul {
+                margin-top: 15px;
+                border-top: 2px solid #c4c4c4;
+                & > li {
+                    padding: 0 18px;
+                    padding-top: 15px;
+                    padding-bottom: 11px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #c4c4c4;
+                    p {
+                        letter-spacing: -0.7px;
+                    }
+                    .p-name {
+                        color: #1d7a0d;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    .p-cont {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    // &:nth-last-of-type(2) {
+                    //     border-bottom: none;
+                    // }
+                }
+
+                li.info-fee {
+                    background-color: #f8f8f8;
+                    border-top: 1px solid #c4c4c4;
+                    border-bottom: 2px solid #c4c4c4;
+
+                    .p-name {
+                        color: #505050;
+                        font-weight: 600;
+                    }
+                    .p-cont {
+                        color: #e30000;
+                        font-size: 30px;
+                        font-weight: 600;
+                        .span-won {
+                            color: #e30000;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            /* sun 추가 */
+            .info-cont {
+                display: flex;
+                > div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                    width: 47%;
+                    box-sizing: border-box;
+                    background-color: #f9f1db;
+                    &:first-child {
+                        position: relative;
+                        width: 53%;
+                        &:after {
+                            content: '';
+                            clear: both;
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 2px;
+                            height: 64px;
+                            background: url(http://static.meloncar.kr/img/main/icon_line.png) no-repeat;
+                        }
+                        .text b {
+                            color: #f30a0a;
+                            span {
+                                margin-left: 3px;
+                                font-size: 1.7rem;
+                                font-weight: 600;
+                                color: #f30a0a;
+                            }
+                        }
+                    }
+                    img {
+                        width: 30%;
+                    }
+
+                    .text {
+                        margin-left: 10px;
+                        b {
+                            display: block;
+                            font-weight: 700;
+                            font-size: 3.15rem;
+                            letter-spacing: -1.5px;
+                            color: #010101;
+                            span {
+                                color: #010101;
+                                font-weight: 400;
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        p {
+                            margin-top: 3px;
+                            text-align: center;
+                            font-size: 17px;
+                            letter-spacing: -0.7px;
+                            font-weight: 600;
+                            color: #010101;
+                        }
+                    }
+                }
+            } /* //info-cont */
+
+            .car-notice {
+                margin-top: 22px;
+                p {
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    letter-spacing: -0.7px;
+                }
+            }
+
+            .btn-area {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0;
+            }
+
+            .btn-quote {
+                font-family: 'S-CoreDream', sans-serif;
+                width: 314px;
+                // background-color: #ffcc1d;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                height: 58px;
+                border-radius: 30px;
+            }
+
+            .btn-bestcar {
+                width: 168px;
+                height: 58px;
+                border-radius: 30px;
+                box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.35);
+                background-color: #d4d4d4;
+                font-family: 'S-CoreDream', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                color: #000;
+            }
+
+            .new-button {
+                .btn-stabucks {
+                    margin-bottom: 10px;
+                }
+            } //new-button
+
+            .stabucks-amricano {
+                display: none;
+                z-index: 20;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+
+                .bg {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    z-index: 555;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    width: 662px;
+                }
+
+                img {
+                    &.img-pc {
+                        display: block;
+                    }
+                    &.img-m {
+                        display: none;
+                    }
+                }
+
+                button {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    span {
+                        display: block;
+                        width: 10rem;
+                        height: 10rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        } //car-info-box
+    }
+}
+
+@media (max-width: 900px) {
+    .wrap-main .sect-shoping {
+        padding-top: 4rem;
+        padding-bottom: 0;
+        .shoping-area {
+            padding: 0 3rem;
+            padding-bottom: 3.8rem;
+            display: block;
+            justify-content: space-between;
+
+            .car-view-box {
+                width: 100%;
+                .car-viewer {
+                    width: 100%;
+                    height: 46rem;
+                    // padding-top: 9.0rem;
+                    overflow: hidden;
+                    .img-box {
+                        width: 92%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .car-info-box {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 5.2rem;
+                .car-name {
+                    font-size: 4rem;
+                    text-align: left;
+                }
+                .car-info-ul {
+                    margin-top: 3.2rem;
+                    border-top: 2px solid #c4c4c4;
+                    & > li {
+                        padding: 0 1.8rem;
+                        padding-top: 1.8rem;
+                        padding-bottom: 1.2rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #c4c4c4;
+                        p {
+                            transform: skew(-0.03deg);
+                        }
+                        .p-name {
+                            font-size: 2.8rem;
+                            font-weight: 500;
+                        }
+                        .p-cont {
+                            font-size: 2.8rem;
+                        }
+
+                        // &:nth-last-of-type(2) {
+                        //     border-bottom: none;
+                        // }
+                    }
+
+                    li.info-fee {
+                        .p-name {
+                            font-size: 2.8rem;
+                        }
+                        .p-cont {
+                            font-size: 3.6rem;
+                            .span-won {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                }
+
+                .info-cont {
+                    > div {
+                        .text {
+                            p {
+                                font-size: 2.4rem;
+                            }
+                        }
+                    }
+                }
+
+                .car-notice {
+                    margin-top: 2.2rem;
+                    p {
+                        font-size: 2.2rem;
+                    }
+                }
+
+                .btn-area {
+                    margin-top: 2.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .btn-quote {
+                    font-size: 3.4rem;
+                    letter-spacing: -1px;
+                    width: 44.6rem;
+                    height: 8.4rem;
+                    border-radius: 4.2rem;
+                    padding-top: 0.4rem;
+                }
+
+                .btn-bestcar {
+                    width: 22.8rem;
+                    background-color: #d4d4d4;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    letter-spacing: -1px;
+                    height: 8.4rem;
+                    border-radius: 4.2rem;
+                    padding-top: 0.2rem;
+                }
+                .new-button {
+                    button {
+                        width: 100%;
+                    }
+                } //new-button
+                .stabucks-amricano {
+                    .bg {
+                        width: 100%;
+                    }
+                    img {
+                        &.img-pc {
+                            display: none;
+                        }
+                        &.img-m {
+                            display: block;
+                        }
+                    }
+                } //starbucks
+            } /* //car-info-box */
+            /* add */
+        }
+    }
+}

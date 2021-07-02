@@ -1,0 +1,26 @@
+[
+    {
+        "img": "TU2y5fmAHffjGrkit5JNFenPyJdFpYcHq403YQDY.png",
+        "name": "아반떼",
+        "grade": "준중형차",
+        "rent_fee": "185,890"
+    },
+    {
+        "img": "gAVTC17nB9BVJoWgyrv764ajNGcWmm1VpMQtCxiX.png",
+        "name": "GV80",
+        "grade": "RV",
+        "rent_fee": "257,093"
+    },
+    {
+        "img": "MXRhdC8bKAaRCoznoQQjqA62JhcUYjtl767t0dxd.png",
+        "name": "그랜저",
+        "grade": "대형차",
+        "rent_fee": "225,883"
+    },
+    {
+        "img": "hqVakorCMhkOGYMVTYhE2vLtA64u7KWXBflj8n6X.png",
+        "name": "카니발",
+        "grade": "승합차",
+        "rent_fee": "241,364"
+    }
+]
