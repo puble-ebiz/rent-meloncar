@@ -67,15 +67,35 @@
 
 <!-- 스타벅스 팝업 -->
 <div class="popup-starbucks">
-    <!-- 21.07.07 -->
     <div>
-        <!-- http://static.meloncar.kr/img/banner/starbucks_popup.jpg 업로드예정 -->
-        <img src="http://sunnyking77.ebiz.test/img/rentcar/meloncar/starbucks_popup.jpg" alt="장기렌트카 견적받으면 스타벅스 전원증정!">
+        <!-- 2021.06.22 입력폼 추가 후 이미지 업로드 예정 -->
+        <!-- <img src="http://static.meloncar.kr/img/banner/starbucks_popup.jpg" alt="장기렌트카 견적받으면 스타벅스 커피쿠폰 증정, 행사기간 2021년 5월 20일 ~ 6월 30일까지"> -->
+        <img src="http://design.ebiznetworks.co.kr/sun/rent-car/img/starbucks_popup.jpg"
+            alt="장기렌트카 견적받으면 스타벅스 커피쿠폰 증정, 행사기간 2021년 5월 20일 ~ 6월 30일까지">
+        <!-- //2021.06.22 입력폼 추가 후 이미지 업로드 예정 -->
         <button class="btn-close">닫기버튼</button>
-        <!-- 버튼추가: 클릭시 기존 견적문의하기 팝업 활성화 -->
-        <button class="fn-open-consult">
-            <img src="http://static.meloncar.kr/img/banner/btn-starbucks_pop.png" alt="견적받고 스타벅스 커피받기 버튼">
-        </button>
+
+        <!-- 2021.06.22 입력폼 추가 -->
+        <div class="rent-estimate">
+            <p class="tit">최저가 견적받기</p>
+            <form class="estimate-form">
+                <div class="inbox">
+                    <input type="text" name="username" placeholder="이름">
+                    <input type="text" name="car" placeholder="관심차종">
+                </div>
+                <input class="input-tel" type="text" name="tel" placeholder="연락처">
+                <div class="agreement">
+                    <input type="checkbox" id="chk-agree" checked>
+                    <label for="chk-agree">
+                        <span>개인정보수집동의</span>
+                    </label>
+                    <button type="button" class="btn-more">보기</button>
+                </div>
+                <button type="button" class="btn-request">견적 신청하고 스벅커피 받기</button>
+            </form>
+        </div>
+        <!-- //2021.06.22 입력폼 추가 -->
+
     </div>
 </div>
 <!-- //스타벅스 팝업 -->
