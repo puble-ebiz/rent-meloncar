@@ -861,6 +861,15 @@
   .show-pc {
     display: none;
   }
+  /* 팝업: 스타벅스 */
+  .popup-starbucks > div .fn-open-consult {
+    padding: 0 3.5rem;
+    box-sizing: border-box;
+  }
+  .popup-starbucks > div .fn-open-consult img {
+    width: 100%;
+  }
+
   .wrap-container {
     padding-top: 0;
   }
