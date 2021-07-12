@@ -16,7 +16,7 @@
   width: 100%;
   margin: 0 auto;
 }
-.popup-starbucks,
+
 .popup-staria {
   display: block;
   position: fixed;
@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 500;
+  z-index: 600;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .popup-staria .inwrap {
@@ -116,7 +116,7 @@
   background-color: #fff;
 }
 .popup-staria .apply-form form .agreement input:checked + label:before {
-  content: "âœ”";
+  content: "✔";
   border-color: #3c7b99;
   background-color: #2a6caa;
   text-align: center;
@@ -146,6 +146,17 @@
 .header .top-banner img,
 .popup-staria .apply-form .btn-request .icon-img img {
   width: auto;
+}
+
+.popup-starbucks {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .popup-starbucks > div {
   position: absolute;
